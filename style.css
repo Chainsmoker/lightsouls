@@ -1,0 +1,8 @@
+#unityContainer{
+    width: 100% !important;
+    height: 100vh !important;
+    margin: auto !important;
+}
+body{
+    margin: 0;
+}

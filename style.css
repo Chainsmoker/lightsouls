@@ -1,8 +1,9 @@
 #unityContainer{
     width: 100% !important;
-    height: 100vh !important;
+    height: 98vh !important;
     margin: auto !important;
 }
 body{
     margin: 0;
+    padding: 0;
 }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/team.css">
+    <link rel="stylesheet" href="/public/css/swip-card.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Swiper -->
+
+    <div id="swip-conteiner">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/public/media/team/matt.png" alt="" class="slide-img" />
+                    <div class="name-banner">
+                        <h2 style="text-align: center; margin: 0; margin-top: 6px;">Matt</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/public/media/team/max.png" alt="" class="slide-img" />
+                    <div class="name-banner">
+                        <h2 style="text-align: center; margin: 0; margin-top: 6px;">Max</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/public/media/team/sanya.png" alt="" class="slide-img" />
+                    <div class="name-banner">
+                        <h2 style="text-align: center; margin: 0; margin-top: 6px;">Sanya</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-active">
+                    <img src="/public/media/team/tanya.png" alt="" class="slide-img" />
+                    <div class="name-banner">
+                        <h2 style="text-align: center; margin: 0; margin-top: 6px;">Tanya</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/public/media/team/vittoria.png" alt="" class="slide-img" />
+                    <div class="name-banner">
+                        <h2 style="text-align: center; margin: 0; margin-top: 6px;">Vittoria</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/public/media/team/yuku.png" alt="" class="slide-img" />
+                    <div class="name-banner">
+                        <h2 style="text-align: center; margin: 0; margin-top: 6px;">Yuki</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            initialSlide: 3,
+            mousewheel: true,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>

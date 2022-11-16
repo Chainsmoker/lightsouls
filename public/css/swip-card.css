@@ -1,0 +1,39 @@
+#swip-conteiner{
+    position: absolute;
+    width: 90vw;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.swiper {
+    width: 100%;
+    height: inherit;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 250px !important;
+    height: 300px !important;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.name-banner{
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  bottom: 0;
+  border-radius: 0 0 25px 25px;
+  background-color: rgba(94, 90, 90, 0.478);
+}
+
+  

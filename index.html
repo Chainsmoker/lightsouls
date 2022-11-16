@@ -7,12 +7,7 @@
     <title>Unity WebGL Player | lightsoul</title>
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./Build/public/css/swip-card.css">
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+
     <script src="Build/UnityLoader.js"></script>
     <script>
       UnityLoader.instantiate("unityContainer", "Build/BUILD WEB.json");
@@ -24,59 +19,6 @@
       id="unityContainer"
       style="width: 960px; height: 600px; margin: auto"
     ></div>
-
-    <!-- Swiper -->
-
-    <div id="swip-conteiner">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./Build/public/media/team/matt.png" alt="" class="slide-img" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./Build/public/media/team/max.png" alt="" class="slide-img" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./Build/public/media/team/sanya.png" alt="" class="slide-img" />
-          </div>
-          <div class="swiper-slide swiper-slide-active">
-            <img src="./Build/public/media/team/tanya.png" alt="" class="slide-img" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./Build/public/media/team/vittoria.png" alt="" class="slide-img" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./Build/public/media/team/yuku.png" alt="" class="slide-img" />
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-        <!-- Initialize Swiper -->
-        <script>
-          var swiper = new Swiper(".mySwiper", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            initialSlide:3,
-            mousewheel:true,
-            coverflowEffect: {
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
-            },
-            pagination: {
-              el: ".swiper-pagination",
-            },
-          });
-        </script>
   </body>
   
 </html>

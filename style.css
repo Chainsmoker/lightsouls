@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Mali;
+    src: url(/public/media/font/Mali-Light.ttf);
+}
 #unityContainer {
     width: 100% !important;
     height: 98vh !important;
@@ -5,6 +9,7 @@
 }
 
 body {
+    font-family: Mali;
     margin: 0;
     padding: 0;
 }

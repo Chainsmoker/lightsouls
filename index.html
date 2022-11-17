@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>Unity WebGL Player | lightsoul</title>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <link rel="stylesheet" href="style.css" />
+  <title>Unity WebGL Player | lightsoul</title>
 
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      UnityLoader.instantiate("unityContainer", "Build/BUILD WEB.json");
-    </script>
-  </head>
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+    UnityLoader.instantiate("unityContainer", "Build/BUILD WEB.json");
+
+  </script>
+</head>
 <!--HELLO CURIUS BOY!!-->
-  <body>
-    <div
-      id="unityContainer"
-      style="width: 960px; height: 600px; margin: auto"
-    ></div>
-  </body>
-  
+
+<body>
+  <div id="unityContainer" style="width: 960px; height: 600px; margin: auto"></div>
+
+  <div id="download-display" style="display: none;">
+    <div class="top">
+      <slot class="logo" name="logo"><img src="/public/media/logo.png" alt=""></slot>
+      <slot class="header" name="header">
+        <h2 slot="heading">LA AVENTURA TE ESPERA</h2>
+      </slot>
+      <div class="btn-download">
+        <button id="download">
+          Descargalo Ya!
+        </button>
+        <slot name="platform"></slot>
+      </div>
+      <slot class="cta" name="cta">
+        <h4>  RPG. AVENTURA</h6>
+      </slot>
+    </div>
+  </div>
+</body>
+
 </html>

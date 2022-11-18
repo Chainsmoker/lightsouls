@@ -159,7 +159,7 @@ body {
     background-color: black;
 }
 
-.ring
+#ring
 {
   position:absolute;
   top:50%;
@@ -180,7 +180,7 @@ body {
   text-shadow:0 0 10px #fff000;
   box-shadow:0 0 20px rgba(0,0,0,.5);
 }
-.ring:before
+#ring:before
 {
   content:'';
   position:absolute;

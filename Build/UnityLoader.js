@@ -3749,10 +3749,21 @@ var UnityLoader = UnityLoader || {
       //cargar otra pantalla
       if(t==1){
         const load = document.getElementById("load-splash");
+        const ringLoad = document.getElementById("ring");
+        const setTime = function(){
+          ringLoad.style.display = "none";
+        }
+        const setLoad = function(){
+          load.style.display = "none ";
+        }
+
         load.style.display = "block";
-        load.style.animation = " fadein 5s reverse";
+        load.style.animation = " fadein 6s reverse";
         load.style.animationIterationCount = "1";
         load.style.animationFillMode = "forwards";
+        setTimeout(setTime, 2000);
+        setTimeout(setLoad, 6000);
+
       }
       //end
       if (true) {

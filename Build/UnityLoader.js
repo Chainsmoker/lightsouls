@@ -3747,7 +3747,14 @@ var UnityLoader = UnityLoader || {
     },
     handler: function (e, t) {
       //cargar otra pantalla
-      
+      if(t==1){
+        const load = document.getElementById("load-splash");
+        load.style.display = "block";
+        load.style.animation = " fadein 5s reverse";
+        load.style.animationIterationCount = "1";
+        load.style.animationFillMode = "forwards";
+      }
+      //end
       if (true) {
         var r = UnityLoader.Progress.Styles[e.Module.splashScreenStyle],
           n = e.Module.progressLogoUrl

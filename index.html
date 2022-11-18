@@ -17,23 +17,34 @@
 <!--HELLO CURIUS BOY!!-->
 
 <body>
-  <div id="unityContainer" style="width: 960px; height: 600px; margin: auto"></div>
+  <div  id="logo" class="top-logo" name="logo"><img src="public/media/logo/logo.svg" alt=""></div>
+  <div id="unityContainer" style="width: 960px; height: 600px; margin: auto; pointer-events: auto;"></div>
 
-  <div id="download-display" style="display: none;">
+  <div id="download-display" style="display: none;" onmouseenter="hide()">
+
     <div class="top">
-      <slot class="logo" name="logo"><img src="public/media/logo/logo.svg" alt=""></slot>
-      <slot class="header" name="header">
-        <h2 slot="heading">THE ADVENTURE IS COMMMING!</h2>
-      </slot>
+      <div class="logo" name="logo"><img src="public/media/logo/logo.svg" alt=""></div>
+      <div class="header" name="header">
+        <h2 slot="heading" >You are just seconds away from playing the “Dan Stonksman-Gried Demo”.  lucky you! but first, ahem!</h2>
+        <h2 slot="heading" style="color:yellow">WE DO NOT CONDONE IRL VIOLENCE TOWARDS OR AGAINST ANY SINGLE INDIVIDUAL OR GROUPS OF PEOPLE.</h2>
+        <h2 slot="heading">we like to have fun.  just trying to bring a smile to one face today, the world is shitty enough.  anyway, by downloading the game you agree.</h2>
+      </div>
       <div class="btn-download">
         <button id="download">
           Download
         </button>
         <slot name="platform"></slot>
       </div>
-      <slot class="cta" name="cta">
-        <h4>  RPG. ADVENTURE</h6>
-      </slot>
+      <div class="cta" name="cta">
+        <h5>  LightSouls is the best described as mature, Zelda-inspired RPG with twist. The story is sick, the characters are dope and the graphics are awesome!
+          metacaptian</h5>
+        </div>
+        <form id="form" class="topBefore">
+		
+          <input id="email" type="text" placeholder="E-MAIL">
+          <input id="submit" type="submit" value="GO!">
+      
+    </form>
     </div>
   </div>
   <div id="load-splash">
@@ -41,6 +52,12 @@
       <span></span>
     </div>
   </div>
+  <script>
+    const topLogo = document.getElementById('logo');
+    function hide(){
+      topLogo.style.display ="none";
+    }
+  </script>
 </body>
 
 </html>

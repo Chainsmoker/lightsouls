@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-  <title>Unity WebGL Player | lightsoul</title>
+  <title>Lightsoul</title>
 
   <link rel="stylesheet" href="style.css" />
 
@@ -21,19 +21,14 @@
   <div id="unityContainer" style="width: 960px; height: 600px; margin: auto; pointer-events: auto;"></div>
 
   <div id="download-display" style="display: none;" onmouseenter="hide()">
-
+    <div id="close-btn" style="pointer-events: auto; z-index:100;">
+      <img src="./public/media/icon/cross.png"/>    </div>
     <div class="top">
       <div class="logo" name="logo"><img src="public/media/logo/logo.svg" alt=""></div>
       <div class="header" name="header">
         <h2 slot="heading" >You are just seconds away from playing the “Dan Stonksman-Gried Demo”.  lucky you! but first, ahem!</h2>
-        <h2 slot="heading" style="color:yellow">WE DO NOT CONDONE IRL VIOLENCE TOWARDS OR AGAINST ANY SINGLE INDIVIDUAL OR GROUPS OF PEOPLE.</h2>
+        <h2 slot="heading" style="color:red">WE DO NOT CONDONE IRL VIOLENCE TOWARDS OR AGAINST ANY SINGLE INDIVIDUAL OR GROUPS OF PEOPLE.</h2>
         <h2 slot="heading">we like to have fun.  just trying to bring a smile to one face today, the world is shitty enough.  anyway, by downloading the game you agree.</h2>
-      </div>
-      <div class="btn-download">
-        <button id="download">
-          Download
-        </button>
-        <slot name="platform"></slot>
       </div>
       <div class="cta" name="cta">
         <h5>  LightSouls is the best described as mature, Zelda-inspired RPG with twist. The story is sick, the characters are dope and the graphics are awesome!
@@ -42,22 +37,38 @@
         <form id="form" class="topBefore">
 		
           <input id="email" type="text" placeholder="E-MAIL">
-          <input id="submit" type="submit" value="GO!">
+          <input id="submit" type="button" value="GO!">
       
     </form>
+    <div id="buttom-download" class="btn-download" style="display: none;">
+      <button id="download">
+        <a href="https://giotis_games.itch.io/lightsoulsds-gdemo" style="">Download</a>
+      </button>
+      <slot name="platform"></slot>
+    </div>
     </div>
   </div>
   <div id="load-splash">
-    <div id="ring">Loading
+    <div id="ring">Work In..
       <span></span>
     </div>
   </div>
+  <h3 id="text-load" style="    color: #cac474;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 110;
+  text-align: center;
+  width: 85%;
+  font-size: 1.5em;">“be patient and prepare your body, while the gnomes load up the site for you” </h3>
   <script>
     const topLogo = document.getElementById('logo');
     function hide(){
       topLogo.style.display ="none";
     }
   </script>
+  <script src="./public/js/display-controlller.js"></script>
 </body>
 
 </html>

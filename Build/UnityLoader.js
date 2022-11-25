@@ -3750,15 +3750,19 @@ var UnityLoader = UnityLoader || {
       if(t==1){
         const load = document.getElementById("load-splash");
         const ringLoad = document.getElementById("ring");
+        const text = document.getElementById("text-load");
+
         const setTime = function(){
           ringLoad.style.display = "none";
+          text.style.display = "none";
+
         }
         const setLoad = function(){
           load.style.display = "none ";
         }
 
         load.style.display = "block";
-        load.style.animation = " fadein 6s reverse";
+        load.style.animation = " fadein 5s reverse";
         load.style.animationIterationCount = "1";
         load.style.animationFillMode = "forwards";
         setTimeout(setTime, 2000);

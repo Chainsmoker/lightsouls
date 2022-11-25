@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Mali;
-    src: url(/public/media/font/Mali-Light.ttf);
+    font-family: zelda;
+    src: url(/public/media/font/zelda.ttf);
 }
 #unityContainer {
     width: 100% !important;
@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: Mali;
+    font-family: zelda;
     margin: 0;
     padding: 0;
 }
@@ -35,6 +35,9 @@ body {
     -o-animation: fadein 2s;
     /* Opera < 12.1 */
     animation: fadein 2s;
+}
+#close-btn:hover{
+  filter: brightness(0.5);
 }
 
 @keyframes fadein {
@@ -97,14 +100,11 @@ body {
 }
 
 #download-display a {
-    height: 30px;
+    height: 80px;
     width: 200px;
-    border-radius: 10px;
-    margin-top: 5em;
-    padding-top: 20px;
+    color: black;
     text-align: center;
     text-decoration: none;
-    background-color: aqua;
     border-style: none;
 }
 
@@ -140,7 +140,7 @@ body {
     padding: 1em;
 }
 .header h2{
-    font-size: 0.8em !important;
+    font-size: 1.1em !important;
     color: white;
     text-align: center;
 }
@@ -197,10 +197,10 @@ body {
   line-height:150px;
   font-family:sans-serif;
   font-size:20px;
-  color:#fff000;
+  color:#bbb66f;
   letter-spacing:4px;
   text-transform:uppercase;
-  text-shadow:0 0 10px #fff000;
+  text-shadow:0 0 10px #bbb66f;
   box-shadow:0 0 20px rgba(0,0,0,.5);
 }
 #ring:before
@@ -212,8 +212,8 @@ body {
   width:100%;
   height:100%;
   border:3px solid transparent;
-  border-top:3px solid #fff000;
-  border-right:3px solid #fff000;
+  border-top:3px solid #cac474;
+  border-right:3px solid #cac474;
   border-radius:50%;
   animation:animateC 2s linear infinite;
 }
